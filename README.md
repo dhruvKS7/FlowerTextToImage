@@ -4,7 +4,7 @@ This is (to my knowledge) the first publicly available PyTorch implementation of
 
 ---
 
-## Setting Up Training
+## Training
 
 This repository contains links to pretrained models (the files themselves could not be uploaded due to file size) that can be used for somewhat immediate generation. However, if you would like to change any hyperparameters or rerun training yourself from scratch, the following steps can be taken:
 
@@ -29,7 +29,7 @@ This repository contains links to pretrained models (the files themselves could 
 
 ---
 
-## Running Evaluation
+## Evaluation
 
 1. **Run `code/Scoring.ipynb`**
     - This simple evaluation script will take the caption embeddings for the test data, generate images based on them, and then run the generated image and original written caption through CLIP.
@@ -38,7 +38,7 @@ This repository contains links to pretrained models (the files themselves could 
 
 ---
 
-## Setting Up Generation
+## Generation
 
 1. **Create captions**
     - Update `code/flower_captions.txt` to include descriptions of the flowers you want to generate images for.
