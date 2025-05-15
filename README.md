@@ -1,7 +1,5 @@
 # Modernizing Generative Adversarial Text to Image Synthesis
 
-# Generative Adversarial Text-to-Image Synthesis for Flowers
-
 This is (to my knowledge) the first publicly available PyTorch implementation of the [Generative Adversarial Text to Image Synthesis](https://arxiv.org/abs/1605.05396) paper that enables text-to-image generation for flowers. Training is based on the Oxford Flowers102 dataset and uses the GAN-CLS architecture from the paper listed above.
 
 ---
