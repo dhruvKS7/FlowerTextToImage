@@ -6,7 +6,7 @@ This is (to my knowledge) the first publicly available PyTorch implementation of
 
 ## Setting Up Training
 
-This repository already contains pretrained models, finetuned text encoders, caption embeddings, and cache files that can be used for immediate generation. However, if you would like to change any hyperparameters or rerun training yourself from scratch, the following steps can be taken:
+This repository already contains pretrained models that can be used for somewhat immediate generation. However, if you would like to change any hyperparameters or rerun training yourself from scratch, the following steps can be taken:
 
 1. **Run `code/TextEncoderEvaluation.ipynb`**
     - This file contains code for evaluating different text encoders on their quality of embeddings on the Flowers102 dataset. You can replace any of the SentenceTransformer models as you see fit and experiment with the final accuracy values.
@@ -15,7 +15,7 @@ This repository already contains pretrained models, finetuned text encoders, cap
 
 2. **Run `code/DataLoader.ipynb`**
     - Once a text encoder is selected, the DataLoader file can be run to generate caption embeddings using your selected encoder.
-    - This code will generate embeddings for the first 5 captions for each image in the dataset and save them to a file on disk (the pre-existing caption embeddings can be found in the `training encoding files` folder).
+    - This code will generate embeddings for the first 5 captions for each image in the dataset and save them to a file on disk.
     - This code will also resize all images in the dataset to a specific size and save them to a file on disk as PyTorch tensors. This is done as an upfront cost in the data loading to massively boost speed during training — rather than directly opening image files for each iteration of the training loop, reading images as tensors from a file led to more than a 10x speedup.
 
 3. **Run a training script**
@@ -41,7 +41,7 @@ This repository already contains pretrained models, finetuned text encoders, cap
 ## Setting Up Generation
 
 1. **Create captions**
-    - Update `flower_captions.txt` to include descriptions of the flowers you want to generate images for.
+    - Update `code/flower_captions.txt` to include descriptions of the flowers you want to generate images for.
     - Each line in the text file should contain its own isolated description of a flower.
 
 2. **Run `code/Generation.ipynb`**
