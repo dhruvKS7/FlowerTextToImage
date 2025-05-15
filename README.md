@@ -6,7 +6,7 @@ This is (to my knowledge) the first publicly available PyTorch implementation of
 
 ## Setting Up Training
 
-This repository already contains pretrained models that can be used for somewhat immediate generation. However, if you would like to change any hyperparameters or rerun training yourself from scratch, the following steps can be taken:
+This repository contains links to pretrained models (the files themselves could not be uploaded due to file size) that can be used for somewhat immediate generation. However, if you would like to change any hyperparameters or rerun training yourself from scratch, the following steps can be taken:
 
 1. **Run `code/TextEncoderEvaluation.ipynb`**
     - This file contains code for evaluating different text encoders on their quality of embeddings on the Flowers102 dataset. You can replace any of the SentenceTransformer models as you see fit and experiment with the final accuracy values.
