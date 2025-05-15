@@ -33,7 +33,7 @@ This repository already contains pretrained models, finetuned text encoders, cap
 
 1. **Run `code/Scoring.ipynb`**
     - This simple evaluation script will take the caption embeddings for the test data, generate images based on them, and then run the generated image and original written caption through CLIP.
-    - The average CLIP score will be returned.
+    - The average CLIP score will be printed.
     - The best results from my training obtained an average CLIP score of around **0.2882**.
 
 ---
